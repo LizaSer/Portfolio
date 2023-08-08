@@ -1,0 +1,451 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  justify-content: center;
+  font-family: "Nunito", sans-serif;
+  background-color: #ffffff;
+  overflow: scroll;
+}
+
+.clicked {
+  color: #f7fbff;
+  border-radius: 10px;
+  background-color: #4c6a86;
+  box-shadow: 2px 2px 20px 2px rgba(0, 0, 0, 0.5);
+}
+
+.main-title {
+  display: block;
+  text-align: center;
+  color: #4c6a86;
+  font-weight: bold;
+  margin-top: 80px;
+}
+
+.games-menu {
+  display: flex;
+  width: 100vw;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.game-result-number {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.player-score-label {
+  color: #ff8b6b;
+  font-weight: 600;
+  padding: 15px;
+}
+
+.computer-score-label {
+  color: #3989d4;
+  font-weight: 600;
+  padding: 15px;
+}
+
+.intro-text {
+  padding-top: 40px;
+  text-align: center;
+  font-size: 21px;
+  font-weight: 300;
+  color: #aeaeae;
+  opacity: 0.7;
+}
+
+.status-display {
+  text-align: center;
+  margin: 20px;
+  display: none;
+}
+
+.tic-tac-toe-game {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 70px;
+  display: none;
+}
+
+.display-tic-tac-toe-game {
+  display: flex;
+}
+
+.tic-tac-toe-game-container {
+  display: grid;
+  text-align: center;
+  grid-template-columns: repeat(3, auto);
+}
+
+.tic-tac-toe-start-game {
+  padding: 10px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.tic-tac-toe-start-game:hover {
+  color: #f7fbff;
+  border-radius: 10px;
+  background-color: #4c6a86;
+}
+
+.choose-sign-container {
+  display: flex;
+  flex-direction: column;
+  margin-right: 100px;
+}
+
+.choose-sign-for-the-game {
+  text-align: center;
+  color: #4c6a86;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.circle-or-cross-sign {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5px;
+}
+
+.tic-tac-toe-sign {
+  font-size: 30px;
+  margin: 10px 20px;
+  font-weight: bolder;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 20px 2px rgba(0, 0, 0, 0.5);
+}
+
+.circle-sign {
+  color: #5dc9dc;
+  cursor: pointer;
+}
+
+.cross-sign {
+  color: #3989d4;
+  cursor: pointer;
+}
+
+.chosen-sign {
+  color: #f7fbff;
+  background-color: #4c6a86;
+}
+
+.status-error-selected-sign {
+  color: red;
+  margin-bottom: 10px;
+  display: none;
+}
+
+.restart-game {
+  font-size: 30px;
+  font-weight: bolder;
+  color: #4c6a86;
+  margin: auto;
+  cursor: pointer;
+}
+
+.cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 10px;
+  height: 10px;
+  padding: 50px;
+  border: 0.25px solid #c3c8cd;
+  border-top: 0px;
+  cursor: pointer;
+}
+
+.cell-0,
+.cell-3,
+.cell-6 {
+  border-left: 0px;
+}
+
+.cell-2,
+.cell-5,
+.cell-8 {
+  border-right: 0px;
+}
+
+.cell-6,
+.cell-7,
+.cell-8 {
+  border-bottom: 0px;
+}
+
+.display {
+  display: block;
+}
+
+/*-----------------rock-paper-scissors-----------------------*/
+
+.rock-paper-scissors-start-game {
+  padding: 10px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.rock-paper-scissors-start-game:hover {
+  color: #f7fbff;
+  border-radius: 10px;
+  background-color: #4c6a86;
+}
+
+.rock-paper-scissors-game {
+  display: flex;
+  flex-direction: column;
+  display: none;
+}
+
+.rock-paper-scissors-game-display {
+  display: flex;
+  flex-direction: column;
+}
+
+.rock-or-paper-or-scissors-sign {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5px;
+}
+
+.rock-paper-scissors-sign {
+  font-size: 30px;
+  margin: 10px 20px;
+  font-weight: bolder;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 20px 2px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+.choose-sign-container-rock-paper-scissors {
+  display: flex;
+  flex-direction: column;
+}
+
+.game-result-display {
+  margin: auto;
+  margin-top: 10px;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.player-Choice {
+  text-align: center;
+}
+
+.computer-Choice {
+  text-align: center;
+}
+
+.rock-paper-scissors-sign-chosen-sign {
+  background-color: #ff8b6b;
+}
+
+.status-error-selected-sign-RSP {
+  color: red;
+  margin-bottom: 10px;
+  margin: auto;
+  display: none;
+}
+
+.display-error-RPS {
+  display: block;
+}
+
+.display-winner {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.player-Choice-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 20px;
+}
+
+.computer-Choice-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 20px;
+}
+
+.sign-description {
+  font-size: 15px;
+  text-align: center;
+}
+
+/*------------------hangman------------------------------*/
+
+.Hangman-start-game {
+  padding: 10px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.Hangman-start-game:hover {
+  color: #f7fbff;
+  border-radius: 10px;
+  background-color: #4c6a86;
+}
+
+.Hangman-category-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.Hangman-category {
+  font-size: 14px;
+  margin: 10px 20px;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 20px 2px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.Hangman-category:hover {
+  background-color: #ff8b6b;
+  color: #f7fbff;
+  box-shadow: 2px 2px 20px 2px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.Hangman-category-clicked {
+  background-color: #ff8b6b;
+  color: #f7fbff;
+}
+
+.status-error-selected-category-hangman {
+  color: red;
+  text-align: center;
+  display: none;
+}
+
+.status-error-selected-category-hangman-display {
+  display: block;
+}
+
+.Hangman-game {
+  display: none;
+}
+
+.display-Hangman-game {
+  display: block;
+}
+
+.Hangman-label-description {
+  display: block;
+  text-align: center;
+  color: #4c6a86;
+  font-weight: bold;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.status-game-result-display {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.board-game-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.figure-container {
+  fill: transparent;
+  stroke: #4c6a86;
+  stroke-width: 2px;
+  stroke-linecap: round;
+  margin-right: 130px;
+}
+
+.figure-Part {
+  display: none;
+}
+
+.Hangman-board-game {
+  display: flex;
+  max-width: 80vw;
+}
+
+.guess-the-word {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.all-letters-container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 600px;
+  justify-content: center;
+  align-items: center;
+}
+
+.letters {
+  border: none;
+  width: 30px;
+  height: 40px;
+  margin: 3px;
+  font-family: "Nunito", sans-serif;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 2px 2px 20px 2px rgba(0, 0, 0, 0.07);
+  cursor: pointer;
+}
+
+.hide-letter {
+  display: none;
+}
+
+.word-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.word-letters {
+  border-bottom: 2px solid #3989d4;
+  color: #4c6a86;
+  font-size: 20px;
+  margin: 0 10px;
+  height: 35px;
+  width: 30px;
+  text-align: center;
+}
+
+.correct-letter-guess {
+  background-color: #3989d4;
+  color: #f7fbff;
+}
+
+.wrong-letter-guess {
+  background-color: #e4e5e7;
+  color: #9f9f9f;
+}
+
+.restart-hangman-game {
+  padding: 60px;
+}

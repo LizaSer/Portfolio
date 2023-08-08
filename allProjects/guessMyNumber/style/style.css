@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 85%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #eee;
+  background-color: #222;
+}
+
+header {
+  position: relative;
+  height: 150px;
+  border-bottom: 7px solid #eee;
+}
+
+main {
+  height: 65vh;
+  color: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 25px;
+}
+.left .guess {
+  border-color: #eee;
+  height: 100px;
+  width: 120px;
+  text-align: center;
+  font-size: 35px;
+  color: #eee;
+  border-style: double;
+  background-color: #222;
+  margin-bottom: 50px;
+}
+.left .btn-check {
+  background-color: white;
+  border: none;
+  color: #222;
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+}
+.rightp {
+  margin-top: 15px;
+}
+.right .message {
+  margin-bottom: 35px;
+}
+
+.top-header {
+  display: flex;
+  padding: 10px;
+  justify-content: space-between;
+}
+.top-header .bth-again {
+  background-color: white;
+  border: none;
+  color: #222;
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px;
+}
+
+.button-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.number {
+  background-color: #eee;
+  text-align: center;
+  padding: 15px;
+  border: none;
+  color: #222;
+  font-size: 35px;
+  margin: 20px;
+  height: 75px;
+  width: 75px;
+}/*# sourceMappingURL=style.css.map */

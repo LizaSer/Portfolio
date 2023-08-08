@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>What to Eat - Home</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./mediaQueries.css" />
+    <script defer src="./script.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">
+        <img
+          src="./img/vecteezy_chef-restaurant-logo-vector-illustrations-template_8709513.jpg"
+          alt="logo-img"
+        />
+      </div>
+      <div class="navbar">
+        <ul>
+          <li><a href="#">All Recipes</a></li>
+          <li><a href="#">Trending</a></li>
+          <li><a href="#">Chef Academy</a></li>
+        </ul>
+        <div class="login">
+          <a href="#">Log in</a>
+        </div>
+      </div>
+    </header>
+    <section class="mainSection">
+      <div class="what-to-cook taxt-main-color">
+        <h1>What we cook <span class="what-to-cook-wordToday">Today?</span></h1>
+
+        <label for="cuisineType taxt-main-color">Cuisine type:</label>
+        <select id="cuisineType" class="taxt-main-color">
+          <option value="" selected hidden>choose cuisine...</option>
+          <option value="Italian">Italian</option>
+          <option value="Chinese">Chinese</option>
+          <option value="French">French</option>
+          <option value="Indian">Indian</option>
+          <option value="All">All cuisines</option>
+        </select>
+
+        <label class="nutrition-label">Nutrition:</label>
+        <div class="nutrition">
+          <div>
+            <input
+              type="checkbox"
+              id="glutenfree"
+              value="glutenfree"
+              name="glutenFree-nutrition"
+              class="nutritionItem"
+            />
+            <label for="glutenfree">Gluten Free</label>
+          </div>
+          <div>
+            <input
+              type="checkbox"
+              id="vegetarian"
+              value="vegetarian"
+              name="vegetarian-nutrition"
+              class="nutritionItem"
+            /><label for="vegetarian">Vegetarian</label>
+          </div>
+          <div>
+            <input
+              type="checkbox"
+              id="vegan"
+              value="vegan"
+              name="vegan-nutrition"
+              class="nutritionItem"
+            /><label for="vegan">Vegan</label>
+          </div>
+          <div>
+            <input
+              type="checkbox"
+              id="paleo"
+              value="paleo"
+              name="paleo-nutrition"
+              class="nutritionItem"
+            /><label for="paleo">Paleo</label>
+          </div>
+        </div>
+        <div class="button-search">
+          <button id="btn-search" class="btn-search">Search</button>
+        </div>
+      </div>
+
+      <img
+        src="./img/7922893.jpg"
+        alt="main-chef-image"
+        class="main-img-first-page"
+      />
+    </section>
+  </body>
+</html>

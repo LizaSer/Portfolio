@@ -1,0 +1,43 @@
+@media screen and (max-width: 992px) {
+  body {
+    overflow: scroll;
+  }
+
+  .games-menu {
+    max-width: 700px;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+
+  .tic-tac-toe-game {
+    flex-direction: column;
+  }
+
+  .tic-tac-toe-game-container {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+
+  .choose-sign-container {
+    margin: 0;
+  }
+
+  .Hangman-board-game {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .figure-container {
+    margin: auto;
+    margin-bottom: 20px;
+  }
+
+  .word-container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .all-letters-container {
+    margin-top: 30px;
+  }
+}

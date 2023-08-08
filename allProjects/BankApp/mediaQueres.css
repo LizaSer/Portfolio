@@ -1,0 +1,133 @@
+@media screen and (max-width: 576px) {
+  .login {
+    display: flex;
+    flex-direction: column;
+  }
+  h2 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1460px) {
+  .show-transfer-operation {
+    visibility: visible;
+  }
+
+  .transfer {
+    margin-bottom: 20px;
+    max-width: 200px;
+    justify-content: flex-end;
+  }
+
+  .transfer-container {
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .amount-container {
+    margin: 0;
+  }
+
+  .transfer-btn {
+    margin: 0;
+  }
+
+  .show-deposit-operation {
+    visibility: visible;
+  }
+
+  .deposit {
+    margin-bottom: 20px;
+    max-width: 200px;
+    justify-content: flex-end;
+  }
+
+  .deposit-container {
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .amount-deposit-container {
+    margin: 0;
+  }
+
+  .deposit-input {
+    max-width: 150px;
+  }
+
+  .deposit-btn {
+    margin: 0;
+  }
+
+  .show-withdrawal-operation {
+    visibility: visible;
+  }
+
+  .withdrawal {
+    margin-bottom: 20px;
+    max-width: 200px;
+    justify-content: flex-end;
+  }
+
+  .withdrawal-container {
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .amount-withdrawal-container {
+    margin: 0;
+  }
+
+  .withdrawal-input {
+    max-width: 150px;
+  }
+
+  .withdrawal-btn {
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 1461px) {
+  .transfer {
+    background-color: #fff;
+    padding: 24px;
+    width: 400px;
+    border-radius: 10px;
+  }
+
+  .transfer-container {
+    display: flex;
+    margin-top: 8px;
+  }
+
+  .deposit {
+    background-color: #fff;
+    padding: 24px;
+    width: 400px;
+    border-radius: 10px;
+  }
+
+  .deposit-container {
+    display: flex;
+    margin-top: 8px;
+  }
+
+  .withdrawal {
+    background-color: #fff;
+    padding: 24px;
+    width: 400px;
+    border-radius: 10px;
+  }
+
+  .withdrawal-container {
+    display: flex;
+    margin-top: 8px;
+  }
+
+  .operations {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 96px;
+    width: 88vw;
+  }
+}

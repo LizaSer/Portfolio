@@ -1,0 +1,404 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #343434;
+  background-color: #f3f3f3;
+  height: 100vh;
+  padding: 36px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  height: 75px;
+}
+
+.logo-main-page {
+  height: 50px;
+}
+
+.welcome {
+  margin-top: 24px;
+  margin-bottom: 8px;
+}
+
+.login-input {
+  padding: 8px 6px;
+  border: none;
+  border-radius: 7px;
+  font-size: 16px;
+  text-align: center;
+  width: 150px;
+  margin-bottom: 12px;
+  margin-left: 12px;
+  border: 1px solid #fff;
+  transition: all 0.3s;
+}
+
+.login-btn {
+  border: none;
+  background: none;
+  font-size: 36px;
+  margin-left: 12px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container-log-in {
+  display: flex;
+  align-items: flex-end;
+}
+
+.error-message {
+  color: red;
+}
+
+.welcome-user-name {
+  padding-left: 16px;
+  font-weight: 500;
+}
+
+.logout-btn {
+  background: #ffffff;
+  font-size: 14px;
+  padding: 8px 6px;
+  width: 95px;
+  border-color: #ffffff;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+table {
+  margin: auto;
+  margin-top: 30px;
+  text-align: center;
+  font-size: 14px;
+  opacity: 0.7;
+}
+
+table,
+th,
+td {
+  border: 1px dotted;
+}
+
+th {
+  padding: 10px;
+}
+
+.balance {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  width: 80vw;
+}
+
+.balance-label {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.balance-date {
+  font-size: 16px;
+  color: #888;
+}
+
+.balance-value {
+  font-size: 36px;
+  font-weight: 400;
+}
+
+.summary {
+  display: flex;
+  align-items: center;
+}
+
+.summary-label-in {
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-right: 8px;
+  padding-left: 24px;
+}
+
+.summary-value-in {
+  font-size: 28px;
+  color: #66c873;
+}
+
+.summary-label-out {
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-right: 8px;
+  padding-left: 24px;
+}
+
+.summary-value-out {
+  font-size: 28px;
+  color: #f5465d;
+}
+
+.summary-label-interest {
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-right: 8px;
+  padding-left: 24px;
+}
+
+.summary-value-interest {
+  font-size: 28px;
+}
+
+.movements {
+  background-color: #fff;
+  border-radius: 10px;
+  width: 85vw;
+}
+
+.movements-row {
+  padding: 24px 24px;
+  margin-left: 24px;
+  margin-right: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+}
+
+.movements-date {
+  font-size: 14px;
+  font-weight: 500;
+  color: #666;
+}
+
+.movements-value {
+  font-size: 24px;
+  margin-left: auto;
+}
+
+.movements-type {
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 20px;
+  margin-right: 16px;
+}
+
+.movements-type-deposit {
+  color: #1fc779;
+}
+
+.movements-type-withdrawal {
+  color: #ff5c5c;
+}
+
+.movements-type-transfer {
+  color: #5aa7ff;
+}
+
+.operations {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 96px;
+  width: 88vw;
+}
+
+.transfer {
+  background-color: #fff;
+  padding: 24px;
+  width: 400px;
+  border-radius: 10px;
+}
+
+.transfer-container {
+  display: flex;
+  margin-top: 8px;
+}
+
+.container-transfer-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.transfer-input {
+  padding: 6px 0px;
+  border-radius: 7px;
+  font-size: 16px;
+  text-align: center;
+  width: 150px;
+  margin-bottom: 12px;
+  border: 1px solid #343434;
+  transition: all 0.3s;
+}
+
+.transfer-to-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.transfer-label-and-show-more {
+  display: flex;
+  align-items: center;
+}
+
+.show-transfer-operation {
+  font-size: 15px;
+  margin-left: 10px;
+  border: #333 1px solid;
+  border-radius: 500px;
+  padding-left: 7px;
+  padding-right: 7px;
+  visibility: hidden;
+  cursor: pointer;
+}
+
+.amount-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 12px;
+}
+
+.transfer-btn {
+  border: none;
+  background: none;
+  font-size: 28px;
+  margin-left: 12px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.deposit {
+  background-color: #fff;
+  padding: 24px;
+  width: 400px;
+  border-radius: 10px;
+}
+
+.deposit-container {
+  display: flex;
+  margin-top: 8px;
+}
+
+.deposit-input {
+  padding: 6px 0px;
+  border-radius: 7px;
+  font-size: 16px;
+  text-align: center;
+  width: 320px;
+  margin-bottom: 12px;
+  border: 1px solid #343434;
+  transition: all 0.3s;
+}
+
+.show-deposit-operation {
+  font-size: 15px;
+  margin-left: 10px;
+  border: #333 1px solid;
+  border-radius: 500px;
+  padding-left: 7px;
+  padding-right: 7px;
+  visibility: hidden;
+  cursor: pointer;
+}
+
+.deposit-label-and-show-more {
+  display: flex;
+  align-items: center;
+}
+
+.amount-deposit-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.deposit-btn {
+  border: none;
+  background: none;
+  font-size: 28px;
+  margin-left: 12px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.withdrawal {
+  background-color: #fff;
+  padding: 24px;
+  width: 400px;
+  border-radius: 10px;
+}
+
+.withdrawal-container {
+  display: flex;
+  margin-top: 8px;
+}
+
+.withdrawal-label-and-show-more {
+  display: flex;
+  align-items: center;
+}
+
+.show-withdrawal-operation {
+  font-size: 15px;
+  margin-left: 10px;
+  border: #333 1px solid;
+  border-radius: 500px;
+  padding-left: 7px;
+  padding-right: 7px;
+  visibility: hidden;
+  cursor: pointer;
+}
+
+.withdrawal-input {
+  padding: 6px 0px;
+  border-radius: 7px;
+  font-size: 16px;
+  text-align: center;
+  width: 320px;
+  margin-bottom: 12px;
+  border: 1px solid #343434;
+  transition: all 0.3s;
+}
+
+.amount-withdrawal-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.withdrawal-btn {
+  border: none;
+  background: none;
+  font-size: 28px;
+  margin-left: 12px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.operation-failed {
+  color: red;
+  display: block;
+}
+
+.display-none {
+  display: none;
+  transition: all 0.9s;
+}

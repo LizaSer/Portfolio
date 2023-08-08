@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BnK-Financial Heroes</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./mediaQueres.css" />
+    <script defer src="./script.js"></script>
+  </head>
+  <body>
+    <section id="login-page" class="login-page">
+      <main>
+        <img src="./img/logo1.png" class="logo" alt="logo" />
+        <h1>BnK</h1>
+        <h2>Financial Heroes</h2>
+        <p class="welcome">Log in to get started</p>
+        <div class="login">
+          <input
+            type="text"
+            placeholder="user name"
+            class="login-input login-input-user"
+            id="login-input-user"
+          />
+          <input
+            type="text"
+            placeholder="password"
+            maxlength="4"
+            class="login-input login-input-pin"
+            id="login-input-pin"
+          />
+          <button id="login-btn" class="login-btn">&rarr;</button>
+        </div>
+        <p id="error-message" class="error-message"></p>
+      </main>
+      <div id="exist-users" class="exist-users">
+        <table>
+          <caption>
+            * Existing user details
+          </caption>
+          <tr>
+            <th>user name</th>
+            <th>password</th>
+          </tr>
+          <tr>
+            <td>dl</td>
+            <td>1111</td>
+          </tr>
+          <tr>
+            <td>ib</td>
+            <td>2222</td>
+          </tr>
+          <tr>
+            <td>tm</td>
+            <td>3333</td>
+          </tr>
+          <tr>
+            <td>gf</td>
+            <td>4444</td>
+          </tr>
+        </table>
+      </div>
+    </section>
+
+    <section id="current-account-info" class="currentAccountInfo display-none">
+      <header>
+        <div class="container-log-in">
+          <img src="./img/logo1.png" class="logo-main-page" alt="logo" />
+          <p class="welcome-user-name">
+            Welcome Back,<span id="user-name-label">Jonas</span>
+          </p>
+        </div>
+        <button id="logout-btn" class="logout-btn">Log out</button>
+      </header>
+
+      <main>
+        <div class="operations">
+          <div id="transfer" class="transfer">
+            <div class="transfer-label-and-show-more">
+              <h3>Transfer</h3>
+              <a id="show-transfer-operation" class="show-transfer-operation"
+                >+</a
+              >
+            </div>
+            <div id="transfer-container" class="transfer-container">
+              <div class="transfer-to-container">
+                <label class="transfer-label">Transfer to</label>
+                <input
+                  type="text"
+                  id="transfer-to-input"
+                  class="transfer-input"
+                />
+              </div>
+              <div class="amount-container">
+                <label class="amount-label">Amount</label>
+                <input
+                  type="number"
+                  id="transfer-to-amount-input"
+                  class="transfer-input"
+                />
+              </div>
+              <button id="transfer-btn" class="transfer-btn">→</button>
+            </div>
+            <p id="transfer-failed" class="operation-failed"></p>
+          </div>
+          <div id="deposit" class="deposit">
+            <div class="deposit-label-and-show-more">
+              <h3>Deposit</h3>
+              <a id="show-deposit-operation" class="show-deposit-operation"
+                >+</a
+              >
+            </div>
+            <div id="deposit-container" class="deposit-container">
+              <div class="amount-deposit-container">
+                <label class="deposit-label">Amount</label>
+                <input
+                  type="number"
+                  id="deposit-amount-input"
+                  class="deposit-input"
+                />
+              </div>
+              <button id="deposit-btn" class="deposit-btn">→</button>
+            </div>
+            <p id="deposit-failed" class="operation-failed"></p>
+          </div>
+          <div id="withdrawal" class="withdrawal">
+            <div class="withdrawal-label-and-show-more">
+              <h3>Withdrawal</h3>
+              <a
+                id="show-withdrawal-operation"
+                class="show-withdrawal-operation"
+                >+</a
+              >
+            </div>
+            <div id="withdrawal-container" class="withdrawal-container">
+              <div class="amount-withdrawal-container">
+                <label class="withdrawal-label">Amount</label>
+                <input
+                  type="number"
+                  id="withdrawal-amount-input"
+                  class="withdrawal-input"
+                />
+              </div>
+              <button id="withdrawal-btn" class="withdrawal-btn">→</button>
+            </div>
+            <p id="withdrawal-failed" class="operation-failed"></p>
+          </div>
+        </div>
+        <div class="balance">
+          <div>
+            <p class="balance-label">Current balance</p>
+            <p class="balance-date">
+              As of <span class="date">05/03/2037</span>
+            </p>
+          </div>
+          <div class="summary">
+            <p id="summary-label-in" class="summary-label-in">In</p>
+            <p id="summary-value-in" class="summary-value-in">0000$</p>
+            <p id="summary-label-out" class="summary-label-out">Out</p>
+            <p id="summary-value-out" class="summary-value-out">0000$</p>
+          </div>
+          <p id="balance-value" class="balance-value">0000$</p>
+        </div>
+        <div class="movements">
+          <div class="movements-row">
+            <div class="movements-type movements-type-deposit">2 deposit</div>
+            <div class="movements-value">4,000$</div>
+          </div>
+          <div class="movements-row">
+            <div class="movements-type movements-type-withdrawal">
+              1 WithDrawal
+            </div>
+            <div class="movements-value">4,000$</div>
+          </div>
+          <div class="movements-row">
+            <div class="movements-type movements-type-transfer">
+              3 transfer from :Daniel Lotus
+            </div>
+            <div class="movements-value">-378$</div>
+          </div>
+        </div>
+      </main>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,44 @@
+@media screen and (max-width: 745px) {
+  .open-whether-info {
+    display: block;
+  }
+
+  .wether-info {
+    flex-direction: column;
+    padding: 0;
+    margin-left: 70px;
+  }
+
+  .degrees {
+    padding: 0;
+    margin: 0;
+  }
+  .wether-more-info {
+    padding: 0;
+    margin: 0;
+  }
+
+  .wether-status {
+    padding: 0;
+    margin: 0;
+  }
+
+  .display {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 746px) {
+  /* .display {
+    display: block;
+  } */
+  /* .search-area {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    background-color: rgba(0, 0, 16, 0.5);
+  } */
+}

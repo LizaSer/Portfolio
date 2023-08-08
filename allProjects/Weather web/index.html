@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>What The Weather</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="./mediaQuery.css" />
+    <script defer src="./script.js"></script>
+  </head>
+
+  <body>
+    <div id="container-cover" class="container-cover">
+      <div id="img-cover-container" class="img-cover-container">
+        <img
+          src="./img/wolfgang-hasselmann-bR_-gllg7Bs-unsplash.jpg"
+          alt="img-cover"
+          class="img-cover"
+        />
+      </div>
+      <div id="wether-info" class="wether-info">
+        <!-- <p class="degrees">°</p> -->
+        <div class="wether-more-info">
+          <p class="country">Choose a city...</p>
+          <!-- <p>00:00 Sunday, 00 oct 00</p> -->
+        </div>
+        <div class="wether-status">
+          <!-- <img
+            src="http://openweathermap.org/img/wn/01d.png"
+            alt="weather-icon"
+            class="weather-icon"
+          /> -->
+          <!-- <p>Sunny</p> -->
+        </div>
+      </div>
+      <div id="search-area" class="search-area display">
+        <input
+          class="search-input-text"
+          id="search-input-text"
+          type="text"
+          placeholder="search location"
+        />
+        <i id="search-btn" class="bi bi-search search-icon"></i>
+        <p id="search-failed-message" class="search-failed-message"></p>
+        <ul id="list-of-last-searches" class="list-of-last-searches">
+          <label>Last searches</label>
+          <p id="intro-last-searches" class="intro-last-searches">
+            Select a city and get a weather forecast...
+          </p>
+          <!-- <li class="last-search">New York</li>
+          <li class="last-search">California</li>
+          <li class="last-search">Manchester</li>
+          <li class="last-search">Tel Aviv</li>
+          <li class="last-search">Jerusalem</li> -->
+        </ul>
+        <hr class="break-line" />
+        <ul id="list-of-weather-details" class="list-of-weather-details">
+          <label>Weather Details</label>
+          <div class="cloudy-percent">
+            <li>Cloudy</li>
+            <p id="cloudy-percent-value">%</p>
+          </div>
+          <div class="humidity-percent">
+            <li>Humidity</li>
+            <p id="humidity-percent-value">%</p>
+          </div>
+          <div class="wind-percent">
+            <li>Wind speed</li>
+            <p id="wind-percent-value">m/s</p>
+          </div>
+          <div class="feel-like-temp">
+            <li>Fell like</li>
+            <p id="feel-like-temp-value">°</p>
+          </div>
+        </ul>
+        <hr class="break-line" />
+      </div>
+      <div class="open-side-bar-menu">
+        <div id="open-whether-info" class="open-whether-info display-none">
+          <i class="bi bi-arrow-left-circle-fill"></i>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
