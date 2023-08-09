@@ -47,3 +47,15 @@ function init() {
   const wait = textTypeEl.getAttribute("data-wait");
   new TypeWriter(textTypeEl, words, wait);
 }
+
+document
+  .querySelectorAll(".mobile-nav-icon")
+  .forEach((menuIcon) => menuIcon.addEventListener("click", mobileDisplay));
+
+function mobileDisplay(e) {
+  const mobileNavIcon = document.getElementById(e.srcElement.id);
+  // mobileNavIcon.classList.toggle("dark");
+  // console.log(mobileNavIcon);
+  const headerNavList = document.getElementById("header-nav-list");
+  headerNavList.classList.toggle("display-none");
+}

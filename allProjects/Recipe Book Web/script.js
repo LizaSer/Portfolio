@@ -2,6 +2,12 @@ const cuisineTypeSelectEl = document.getElementById("cuisineType");
 const nutritionCheckBoxEl = document.querySelectorAll(".nutritionItem");
 const searchBtn = document.getElementById("btn-search");
 
+const asideMenuIcon = document.getElementById("hamburgerMenu");
+const asideMenuNav = document.getElementById("side-menu");
+asideMenuIcon.addEventListener("click", function () {
+  asideMenuNav.classList.toggle("display");
+});
+
 function getCuisineTypeUserChooseText() {
   const selectedCuisineType = cuisineTypeSelectEl.value;
   localStorage.setItem(

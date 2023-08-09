@@ -8,7 +8,35 @@
   }
 }
 
-@media screen and (max-width: 1460px) {
+@media screen and (max-width: 727px) {
+  .operations {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .summary {
+    display: none;
+  }
+
+  .balance-value {
+    font-size: 21px;
+  }
+
+  .balance-label {
+    font-size: 16px;
+  }
+
+  .balance-date {
+    font-size: 12px;
+  }
+
+  .movements-value {
+    font-size: 21px;
+  }
+
+  .movements-type {
+    padding: 0;
+  }
   .show-transfer-operation {
     visibility: visible;
   }
@@ -87,7 +115,7 @@
   }
 }
 
-@media screen and (min-width: 1461px) {
+@media screen and (min-width: 728px) {
   .transfer {
     background-color: #fff;
     padding: 24px;

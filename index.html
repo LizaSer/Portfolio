@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio-Liza Serchenko</title>
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./mediaQueries.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
@@ -16,7 +17,11 @@
       <div class="container-header">
         <nav class="header-nav">
           <div class="logo">LS</div>
-          <ul class="header-nav-list">
+
+          <ul
+            id="header-nav-list"
+            class="header-nav-list header-nav-list-mobile"
+          >
             <li class="list-item">
               <a href="./index.html" class="header-nav-item current">Home</a>
             </li>
@@ -31,10 +36,13 @@
             </li>
           </ul>
         </nav>
+        <div id="mobile-nav" class="mobile-nav">
+          <i id="mobile-nav-icon" class="bi bi-list mobile-nav-icon"></i>
+        </div>
       </div>
       <header class="header-homepage">
         <div class="header-content">
-          <h1>
+          <h1 class="intro-title">
             Hi I'm Liza
             <span
               id="text-type"
@@ -43,6 +51,7 @@
               data-words='[",welcome to my website 🙋",",nice to meet you",",this is my portfolio"]'
             ></span>
           </h1>
+          <h1 class="phone-text">Hi I'm Liza, welcome to my website 🙋</h1>
           <p id="opening-text" class="opening-text">
             I`m a full stack developer student, and i hope you will enjoy my
             projects.

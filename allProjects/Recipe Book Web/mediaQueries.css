@@ -1,4 +1,4 @@
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 727px) {
   .container {
     max-width: 90%;
   }
@@ -50,6 +50,18 @@
   }
   .nutrition-label {
     margin-left: 20px;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  .aside-menu {
+    display: block;
+  }
+
+  .recipe-info {
+    flex-direction: column;
   }
 }
 

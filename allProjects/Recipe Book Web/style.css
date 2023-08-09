@@ -295,6 +295,10 @@ ul li {
   transform: translate(0, -11px) rotate(45deg);
 }
 
+.display-none {
+  display: none;
+}
+
 .user-preferences {
   display: flex;
   flex-grow: 1;

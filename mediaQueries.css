@@ -1,0 +1,145 @@
+@media screen and (max-width: 415px) {
+  /* home page*/
+  .intro-title {
+    display: none;
+  }
+  .header-content span {
+    display: none;
+  }
+
+  .phone-text {
+    display: block;
+    width: 300px;
+    margin: auto;
+    padding-bottom: 30px;
+  }
+
+  .opening-text {
+    display: none;
+  }
+
+  .footer-content {
+    position: fixed;
+    bottom: 0;
+    flex-direction: column;
+  }
+  .footer-content p {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  .logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .header-nav-list-mobile {
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 20px;
+    background-color: black;
+    height: 100vh;
+    opacity: 0.9;
+    text-align: center;
+  }
+
+  .header-nav-list-mobile li:first-child {
+    margin-top: 50px;
+  }
+
+  .mobile-nav-icon {
+    display: block;
+  }
+
+  /* about*/
+  .about-info {
+    flex-direction: column;
+  }
+
+  .bio {
+    border-left: none;
+    margin-top: 20px;
+    width: 250px;
+  }
+
+  .bio-img {
+    height: 200px;
+    width: 200px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .skills {
+    flex-direction: column;
+  }
+
+  /* projects*/
+  .items {
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+  }
+
+  .items .item {
+    display: flex;
+    flex-direction: column;
+    background-color: inherit;
+  }
+
+  .item-text-wrap {
+    background-color: rgb(255, 207, 35);
+  }
+
+  .item-text-title {
+    display: block;
+  }
+
+  /* contact*/
+  .contact-container {
+    padding-bottom: 20px;
+  }
+  .text-fields {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+  }
+
+  .btn-submit {
+    background-color: #333;
+    color: #f4f4f4;
+  }
+
+  .contact-info {
+    flex-direction: column;
+  }
+
+  .contact-info div {
+    padding: 10px;
+  }
+
+  .contact-container-c {
+    padding: 50px;
+  }
+
+  .contact-container-c h4 {
+    padding-bottom: 50px;
+  }
+}
+
+@media screen and (min-width: 416px) {
+  .header-nav-list-mobile {
+    display: none;
+  }
+
+  .header-nav-list {
+    display: flex;
+  }
+
+  .logo {
+    color: #f4f4f4;
+  }
+}

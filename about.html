@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio-Liza Serchenko-About</title>
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./mediaQueries.css" />
+    <script defer src="./script.js"></script>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
@@ -15,8 +17,11 @@
       <div class="tint">
         <div class="container-header">
           <nav class="header-nav">
-            <div class="logo logo-light">LS</div>
-            <ul class="header-nav-list">
+            <div class="logo">LS</div>
+            <ul
+              id="header-nav-list"
+              class="header-nav-list header-nav-list-mobile"
+            >
               <li class="list-item">
                 <a href="./index.html" class="header-nav-item">Home</a>
               </li>
@@ -30,6 +35,9 @@
                 <a href="./contact.html" class="header-nav-item">Contact</a>
               </li>
             </ul>
+          </nav>
+          <nav id="mobile-nav" class="mobile-nav">
+            <i id="mobile-nav-icon" class="bi bi-list mobile-nav-icon"></i>
           </nav>
         </div>
 
