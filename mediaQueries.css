@@ -50,8 +50,14 @@
     margin-top: 50px;
   }
 
+  .mobile-nav {
+    margin-top: 15px;
+  }
+
   .mobile-nav-icon {
-    display: block;
+    display: inline;
+    position: relative;
+    margin-left: 350px;
   }
 
   /* about*/
